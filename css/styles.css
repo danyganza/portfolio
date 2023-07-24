@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: auto;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
+hr {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1440px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  width: 1440px;
+  margin: auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 60px;
+}
+nav ul li {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li a:hover {
+  color: #4ee1a0;
+}
+
+.hero-section {
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  min-height: 70vh;
+  padding: 100px 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.intro-heading {
+  width: 60%;
+  position: relative;
+}
+#rings-top {
+  position: absolute;
+  top: -60px;
+  left: -150px;
+}
+.intro-heading h2 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 88px;
+  margin-bottom: 60px;
+}
+#green-under-line {
+  border-bottom: 4px solid #4ee1a0;
+}
+.intro-heading p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 400px;
+  margin-bottom: 80px;
+}
+
+.contact-me-btn {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 0px;
+  border-bottom: 2px solid #4ee1a0;
+  padding: 0 0 4px 0;
+  cursor: pointer;
+}
+
+.contact-me-btn:hover {
+  color: #4ee1a0;
+}
+
+.intro-image {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  width: 40%;
+  position: relative;
+}
+#profile-image {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+#circle-top {
+  position: absolute;
+  bottom: 150px;
+  left: 50px;
+}
+
+.skills {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 80px 15px;
+}
+.skill-item {
+  width: 32%;
+}
+
+.skill-item h2 {
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+}
+.skill-item p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #d9d9d9;
+}
+
+#project-section {
+  padding: 80px 0;
+}
+.project-introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.project-introduction h2 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tech {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.technologies {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600px;
+  color: #d9d9d9;
+}
+
+.links-to-project {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.project-btn {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 0px;
+  border-bottom: 2px solid #4ee1a0;
+  padding: 0 0 4px 0;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  color: #4ee1a0;
+}
+#contact {
+  padding: 80px 15px;
+  background-color: #242424;
+}
+
+.contact-details {
+  display: flex;
+}
+.contact-info {
+  width: 50%;
+  position: relative;
+}
+#rings {
+  position: absolute;
+  bottom: 0;
+  left: -150px;
+}
+
+.contact-info h2 {
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 450px;
+  margin-bottom: 80px;
+}
+.form {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  gap: 20px;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  font-size: 18px;
+  color: #d9d9d9;
+  padding: 25px;
+  border-inline: 0px;
+  border: 0px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+}
+
+#send-message-button {
+  align-self: flex-end;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 0px;
+  border-bottom: 2px solid #4ee1a0;
+  padding: 0 0 4px 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#send-message-button:hover {
+  color: #4ee1a0;
+}
+
+footer {
+  background-color: #242424;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+  border-top: 2px solid #d9d9d9;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+i:hover {
+  cursor: pointer;
+  color: #4ee1a0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 50px 10px;
+    margin: auto;
+  }
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .intro-heading {
+    width: 100%;
+    position: static;
+  }
+
+  #rings-top {
+    position: absolute;
+    top: 0;
+    left: -400px;
+  }
+  #circle-top {
+    bottom: 0;
+    left: 300px;
+  }
+
+  .intro-heading h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .intro-heading p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-me-btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .intro-heading {
+    text-align: center;
+  }
+  .intro-image {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .skill-item {
+    width: 100%;
+  }
+
+  .skill-item h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .skill-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #project-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-introduction h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .projects {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    position: relative;
+  }
+  .contact-info,
+  .form {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+
+  .contact-info h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .contact-info p {
+    width: 100%;
+  }
+
+  #rings {
+    bottom: -90px;
+    left: -300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    width: 90%;
+  }
+
+  nav ul {
+    gap: 25px;
+  }
+  .container {
+    width: 90%;
+  }
+  .intro-heading {
+    width: 100%;
+  }
+  .intro-heading h2 {
+    font-size: 54px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+  .intro-heading p {
+    margin-bottom: 30px;
+  }
+  .skills {
+    align-content: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .skill-item {
+    width: 48%;
+  }
+
+  .skill-item h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .skill-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .project-introduction h2 {
+    font-size: 54px;
+    line-height: 40px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    position: relative;
+  }
+  .contact-info,
+  .form {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+  .contact-info h2 {
+    font-size: 54px;
+    line-height: 54px;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .contact-info p {
+    width: 50%;
+  }
+
+  #rings {
+    bottom: -90px;
+    left: -300px;
+  }
+}
